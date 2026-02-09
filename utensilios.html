@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ropa | RECUPERA+ - Colegio Loyola</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo-container">
+        <img src="img/logo.png" alt="Logo Colegio Loyola" class="logo-img">
+        <div class="logo-text">
+            <h1>RECUPERA+</h1>
+            <span>Colegio Loyola</span>
+        </div>
+    </div>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+<li class="dropdown">
+    <a href="#">Categorías ▾</a>
+    <ul class="dropdown-menu">
+        <li><a href="ropa.html">Ropa</a></li>
+        <li><a href="utensilios.html">Utensilios Varios</a></li>
+        <li><a href="material.html">Material Escolar</a></li>
+        <li><a href="electronicos.html">Dispositivos Electrónicos</a></li>
+        <li><a href="otros.html">Otros</a></li>
+    </ul>
+</li>
+    </nav>
+</header>
+
+<section class="category-hero">
+    <h2>Categoría: Utensilios Varios</h2>
+    <p>Tomatodo, Loncheras, Tappers, Cubiertos y otros similares.</p>
+</section>
+
+<section class="items-grid">
+
+    <!-- EJEMPLO REAL -->
+    <div class="item-card">
+        <img src="img/ejemplo-ropa.jpg" onclick="openLightbox(this.src)">
+        <div class="item-info">
+            <h4>Chompa verde institucional</h4>
+            <p>Encontrada en el patio central. Talla aproximada M.</p>
+            <span class="item-code">Código: ROP-001</span>
+        </div>
+    </div>
+
+    <!-- PLANTILLA VACÍA -->
+    <div class="item-card empty">
+        <div class="item-placeholder">
+            <p>Espacio para nuevo objeto</p>
+            <span>Se cargará automáticamente desde admin</span>
+        </div>
+    </div>
+
+</section>
+
+<footer class="footer">
+    <p>Proyecto RECUPERA+ | Colegio Loyola © 2026</p>
+</footer>
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+    <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" src="">
+</div>
+<script>
+function openLightbox(src) {
+    document.getElementById("lightbox-img").src = src;
+    document.getElementById("lightbox").style.display = "flex";
+}
+
+function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+}
+
+// cerrar si hacen click fuera de la imagen
+document.getElementById("lightbox").addEventListener("click", function(e) {
+    if (e.target === this) {
+        closeLightbox();
+    }
+});
+</script>
+
+</body>
+</html>

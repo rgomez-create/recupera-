@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin RECUPERA+</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<section class="container">
+  <h2>Administración de Objetos Perdidos</h2>
+
+  <form onsubmit="guardarObjeto(event)">
+    <label>Categoría</label><br>
+    <select id="categoria" required>
+      <option value="Ropa">Ropa</option>
+      <option value="Utensilios">Utensilios</option>
+      <option value="Material">Material Escolar</option>
+      <option value="Electrónicos">Electrónicos</option>
+      <option value="Otros">Otros</option>
+    </select><br><br>
+
+    <label>Descripción</label><br>
+    <textarea id="descripcion" required></textarea><br><br>
+
+    <label>Imagen</label><br>
+    <input type="file" id="imagen" accept="image/*" required><br><br>
+
+    <button type="submit">Guardar Objeto</button>
+  </form>
+</section>
+
+<script src="js/app.js"></script>
+</body>
+</html>
