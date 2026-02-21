@@ -2,8 +2,8 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <title>Ropa | RECUPERA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ropa | RECUPERA+ - Colegio Loyola</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
@@ -11,49 +11,52 @@
 
 <body>
 
+<!-- HEADER CON LOGOS -->
 <header class="header">
-    <div class="logo-container">
-        <img src="img/logo.png" alt="Logo Colegio Loyola" class="logo-img">
-        <div class="logo-text">
-            <h1>RECUPERA+</h1>
-            <span>Colegio Loyola</span>
-        </div>
-    </div>
+    <div class="top-logos">
+        <img src="img/r.png" class="side-logo" alt="Logo R">
 
-    <nav class="nav">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-<li class="dropdown">
-    <a href="#">Categorías ▾</a>
-    <ul class="dropdown-menu">
-        <li><a href="ropa.html">Ropa</a></li>
-        <li><a href="utensilios.html">Utensilios Varios</a></li>
-        <li><a href="material.html">Material Escolar</a></li>
-        <li><a href="electronicos.html">Dispositivos Electrónicos</a></li>
-        <li><a href="otros.html">Otros</a></li>
-    </ul>
-</li>
-    </nav>
+        <div class="logo-container">
+            <img src="img/logo.png" class="logo-img" alt="Logo Colegio Loyola">
+            <div class="logo-text">
+                <h1>RECUPERA</h1>
+                <span>Colegio Loyola</span>
+            </div>
+        </div>
+
+        <img src="img/vamoa1k.png" class="side-logo" alt="Logo Vamoa1k">
+    </div>
 </header>
 
+<!-- MINI MENU CATEGORÍAS -->
+<section class="mini-categories">
+    <ul>
+        <li><a href="ropa.html">Ropa</a></li>
+        <li><a href="utensilios.html">Utensilios</a></li>
+        <li><a href="material.html">Material Escolar</a></li>
+        <li><a href="electronicos.html">Electrónicos</a></li>
+        <li><a href="otros.html">Otros</a></li>
+    </ul>
+</section>
+
+<!-- HERO CATEGORÍA -->
 <section class="category-hero">
     <h2>Categoría: Ropa</h2>
     <p>Chompas, chamarras, gorras, bufandas y otras prendas extraviadas.</p>
 </section>
 
+<!-- OBJETOS -->
 <section class="items-grid">
 
-    <!-- EJEMPLO REAL -->
     <div class="item-card">
         <img src="img/ejemplo-ropa.jpg" onclick="openLightbox(this.src)">
         <div class="item-info">
             <h4>Chompa roja institucional</h4>
-            <p>Encontrada en el patio central. Talla aproximada M.</p>
+            <p>Talla aproximada M.</p>
             <span class="item-code">Código: ROP-001</span>
         </div>
     </div>
 
-    <!-- PLANTILLA VACÍA -->
     <div class="item-card empty">
         <div class="item-placeholder">
             <p>Espacio para nuevo objeto</p>
@@ -64,13 +67,15 @@
 </section>
 
 <footer class="footer">
-    <p>Proyecto RECUPERA+ | Colegio Loyola © 2026</p>
+    <p>Proyecto RECUPERA | Colegio Loyola © 2026</p>
 </footer>
+
 <!-- LIGHTBOX -->
 <div class="lightbox" id="lightbox">
     <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
     <img id="lightbox-img" src="">
 </div>
+
 <script>
 function openLightbox(src) {
     document.getElementById("lightbox-img").src = src;
@@ -81,7 +86,6 @@ function closeLightbox() {
     document.getElementById("lightbox").style.display = "none";
 }
 
-// cerrar si hacen click fuera de la imagen
 document.getElementById("lightbox").addEventListener("click", function(e) {
     if (e.target === this) {
         closeLightbox();
@@ -91,4 +95,3 @@ document.getElementById("lightbox").addEventListener("click", function(e) {
 
 </body>
 </html>
-
