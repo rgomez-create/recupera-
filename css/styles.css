@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* HEADER */
+
+.header {
+    background-color: #0b3d2e;
+    padding: 20px 40px;
+}
+
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #d4af37;
+}
+
+.logo span {
+    font-size: 14px;
+    display: block;
+}
+
+
+/* HERO */
+
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(11,61,46,0.8), rgba(11,61,46,0.8)),
+                url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    margin-bottom: 30px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+}
+
+.search-box input {
+    padding: 12px;
+    width: 250px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-box button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #d4af37;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    font-weight: 600;
+}
+
+/* INFO */
+
+.info {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.info h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #0b3d2e;
+}
+
+/* CATEGORIES */
+
+.categories {
+    padding: 40px 60px;
+    text-align: center;
+}
+
+.categories h3 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #0b3d2e;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 40px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fc9f25;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    background-color: #0b3d2e;
+    color: white;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #0b3d2e;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* LOGO */
+
+/* CONTENEDOR LOGOS SUPERIOR */
+.top-logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LOGO CENTRAL */
+.logo-container {
+    text-align: center;
+}
+
+.logo-img {
+    height: 80px;
+}
+
+/* LOGOS LATERALES */
+.side-logo {
+    height: 105px;
+    width: auto;
+    object-fit: contain;
+}
+
+
+
+.logo-text h1 {
+    color: #ff7a00;
+    font-weight: 700;
+}
+
+.logo-text span {
+    color: white;
+    font-size: 14px;
+}
+
+/* MINI CATEGORÍAS SUPERIOR */
+
+.mini-categories {
+    background-color: white;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.mini-categories ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.mini-categories a {
+    text-decoration: none;
+    color: #0b3d2e;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.mini-categories a:hover {
+    color: #ff7a00;
+}
+
+
+/* HERO */
+
+.hero {
+    height: 35vh; /* antes 60vh */
+    background: linear-gradient(rgba(11,61,46,0.85), rgba(11,61,46,0.85)),
+                url('https://images.unsplash.com/photo-1588072432836-e10032774350');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 40px 20px;
+}
+
+
+.hero-content h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+/* CATEGORY CARDS WITH IMAGE */
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+    background-color: #f5f5f5;
+}
+
+.card h4 {
+    margin-top: 10px;
+}
+
+/* CATEGORY HERO */
+
+.category-hero {
+    background-color: #0b3d2e;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.category-hero h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* GRID DE OBJETOS */
+
+.items-grid {
+    padding: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* TARJETA OBJETO */
+
+.item-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    position: relative; /* opcional pero seguro */
+}
+
+.item-card:hover {
+    transform: translateY(-5px);
+}
+
+.item-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.item-info {
+    padding: 20px;
+}
+
+.item-info h4 {
+    margin-bottom: 10px;
+    color: #0b3d2e;
+}
+
+.item-info p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.item-code {
+    font-weight: 600;
+    color: #d4af37;
+}
+
+/* TARJETA VACÍA */
+
+.item-card.empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #ccc;
+    background-color: #fafafa;
+}
+
+.item-placeholder {
+    text-align: center;
+    padding: 40px;
+    color: #888;
+}
+
+.item-placeholder span {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+@media (max-width: 900px) {
+    .items-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .items-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* MODAL IMAGEN */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 85%;
+    border-radius: 10px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+/* ===== POPUP IMAGEN (LIGHTBOX) ===== */
+
+/* LIGHTBOX */
+
+.lightbox {
+    display: none; /* esto es clave */
+    position: fixed;
+    inset: 0; /* reemplaza top, left, width, height */
+    background: rgba(0,0,0,0.85);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 85%;
+    border-radius: 10px;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
